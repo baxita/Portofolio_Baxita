@@ -1,0 +1,186 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+/* animation on h1 fades in when open page */
+h1 {
+  animation: fadeIn linear 8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Target the immediate divs inside, left slide immediate div */
+
+.left-slide > div {
+  height: 100%;
+  /* takes up 100 % of the container width left-slide which is 35% */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.left-slide h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+  /* smoother change of bg pictures */
+  transition: transform 0.5s ease-in-out;
+}
+
+
+#delievery-app,
+#figma-link,
+#music-cover,
+#swop-app,
+#scrollytelling {
+  font-size: 18px;
+  margin-top: 30px;
+  color: bisque;
+  cursor: pointer;
+}
+
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* 35% because the with of the left slide-container is 35%, so for the right
+    slide I'm positioning i absolute within the container, so It will start here
+    which is 35% over from the left, the width will be 65% */
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* to show the image*/
+/* NOTE that we already have set the background color inline in HTML */
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* centered on the x and y axis */
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* in case you wnt to add other buttons somewhere, this is seperated from general button style */
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+  /* move button over to the left */
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+  /* move button over to the left */
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+  .left-slide > div {
+  /* takes up 100 % of the container width left-slide which is 35% */
+  width: 15%;
+}
+
+.right-slide {
+
+  /* 35% because the with of the left slide-container is 35%, so for the right
+    slide I'm positioning i absolute within the container, so It will start here
+    which is 35% over from the left, the width will be 65% */
+  left: 15%;
+  width: 15%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.left-slide h1 {
+  font-size: 18px;
+  
+}
+    
+}
+
+
+/* takes up 100 % of the container width left-slide which is 35% */
+/* @media screen and (min-width: 1200px) {
+  .left-slide > div {
+    height: 100%;
+    
+    width: 100%;
+    left: 100%;
+  }
+
+  .right-slide > div {
+    height: 100%;
+    width: 100%;
+    left: -30%;
+  }
+} */
