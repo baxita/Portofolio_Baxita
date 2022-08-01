@@ -146,20 +146,25 @@ button:focus {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
 
-  .left-slide > div {
+ /* .left-slide > div {*/
   /* takes up 100 % of the container width left-slide which is 35% */
-  width: 15%;
+  /* width: 15%;*/
 }
 
+/*COMMENTED OUT!!
 .right-slide {
+*/    
 
   /* 35% because the with of the left slide-container is 35%, so for the right
     slide I'm positioning i absolute within the container, so It will start here
     which is 35% over from the left, the width will be 65% */
+/*  
   left: 15%;
   width: 15%;
   transition: transform 0.5s ease-in-out;
+  
 }
+*/
 
 .left-slide h1 {
   font-size: 18px;
