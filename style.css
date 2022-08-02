@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+#screen-error {
+  display: none;
+}
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -183,5 +187,50 @@ p {
   text-align: center;
 
 } 
+
+/* to set if opened in mobile portrait version.Iphone SE, 12 or bigger( prompt  
+by HTML to landscape or bigger screen) */
+@media (orientation: portrait) {
+
+ main {
+    display: none !important;
+  }
+
+  #screen-error {
+    background: linear-gradient(180deg, #9f7942 0%, #945050 41.15%, #456079 95.83%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  #screen-error h1 {
+    font-size: 24px;
+    padding-top: 1rem;
+    /* text-align: center; */
+    color: bisque;
+  }
+  
+  #error-text,
+  #skjerm-str,
+  #guidance-two {
+    font-size: 16px;
+    margin-top: 2rem;
+    max-width: 45ch;
+    padding: 10px;
+    color: bisque;
+    margin-top: 1rem;
+    /* text-align: center; */
+  }
+
+  #guidance-one {
+    color: bisque;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+}
 
 
