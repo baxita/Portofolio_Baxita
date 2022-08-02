@@ -140,6 +140,42 @@ button:focus {
   border-bottom-right-radius: 5px;
 }
 
+@media screen and (min-width: 360px) and (max-width :844px) {
+
+  .left-slide h1 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: -60px; 
+}
+
+p {
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    /* margin-top: -10px; */
+}
+
+#delievery-app,
+#figma-link,
+#music-cover,
+#swop-app,
+#scrollytelling {
+  font-size: 12px;
+  padding-top: 5px;
+  text-align: center;
+ 
+}
+
+.slider-container .action-buttons button {
+  top: 60%; 
+}
+
+.right-slide {
+  width: 75%;    
+}
+
+}
+
 /*@media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
