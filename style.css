@@ -154,43 +154,35 @@ button:focus {
   font-size: 16px;
   text-align: center;
   margin-top: -60px; 
-}
+  }
 
-p {
+  p {
     font-size: 10px;
     text-align: center;
     padding: 5px;
     /* margin-top: -10px; */
-}
+  }
 
-#delievery-app,
-#figma-link,
-#music-cover,
-#swop-app,
-#scrollytelling {
+  #delievery-app,
+  #figma-link,
+  #music-cover,
+  #swop-app,
+  #scrollytelling {
   font-size: 12px;
   padding-top: 5px;
   text-align: center;
  
-}
+  }
 
-.slider-container .action-buttons button {
+  .slider-container .action-buttons button {
   top: 60%; 
-}
+  }
 
-.right-slide {
+  .right-slide {
   width: 75%;    
-}
+  } 
 
 }
-
-@media screen and (min-width: 844px) and (max-width :1040px) {
-
-  .left-slide h1 {
-  font-size: 20px;
-  text-align: center;
-
-} 
 
 /* to set if opened in mobile portrait version.Iphone SE, 12 or bigger( prompt  
 by HTML to landscape or bigger screen) */
@@ -237,4 +229,11 @@ by HTML to landscape or bigger screen) */
 
 }
 
+@media screen and (min-width: 844px) and (max-width :1040px) {
+
+  .left-slide h1 {
+  font-size: 20px;
+  text-align: center;
+
+} 
 
