@@ -168,11 +168,12 @@ button:focus {
   #figma-link,
   #music-cover,
   #swop-app,
-  #scrollytelling {
+  #scrollytelling,
+  #lp_cd-salg,
+  #discogs-link {
   font-size: 12px;
   padding-top: 5px;
   text-align: center;
- 
   }
 
   .slider-container .action-buttons button {
