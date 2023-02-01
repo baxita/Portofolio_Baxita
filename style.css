@@ -108,6 +108,13 @@ p {
   margin-top: 20px;
 }
 
+strong {
+  margin-top: 15px;
+  text-align: center;
+  color: rgb(216, 194, 178);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #info_one,
 #info_two,
 #info_three,
