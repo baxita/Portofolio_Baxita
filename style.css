@@ -81,6 +81,10 @@ p {
   margin-bottom: 20px;
 }
 
+#meg {
+  color:rgb(180, 200, 180)
+}
+
 
 #delievery-app,
 #figma-link,
@@ -88,11 +92,38 @@ p {
 #swop-app,
 #scrollytelling,
 #lp_cd-salg,
-#discogs-link {
+#discogs-link,
+#website-link-one,
+#website-link-two,
+#website-link-three,
+#web-prosjekt {
   font-size: 18px;
   margin-top: 30px;
   color: bisque;
   cursor: pointer;
+}
+
+#gartnerbutikken {
+  color: #009966;
+  margin-top: 20px;
+}
+
+#info_one,
+#info_two,
+#info_three,
+#info_four {
+  text-align: center;
+}
+
+#porto-welcome {
+  margin-top: 30px;
+  font-size: 20px;
+  color:rgb(216, 194, 178);
+}
+
+#porto-welcome-one  {
+  margin-top: 5px;
+  color:rgb(216, 194, 178);
 }
 
 .right-slide {
