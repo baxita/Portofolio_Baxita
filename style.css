@@ -75,6 +75,12 @@ p {
   transition: transform 0.5s ease-in-out;
 }
 
+.left-slide h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 #delievery-app,
 #figma-link,
